@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Date: 2022/03/04
+Date: 2022/10/04
 Author: Giray Balci
 """
 
@@ -19,9 +19,8 @@ if not os.path.isdir(file_dir):
     
 prefix = "2point_"
     
+#save data for future usage as csv file
 csv_file_name = prefix + "data_out.csv"
-
-
 
 
 #%%
@@ -33,7 +32,6 @@ with open(measFile_name, 'r') as f:
     lines = f.readlines()
     
 f.close()
-
 
 numOfMeas = 0
 isStartOfMeas = False
@@ -79,12 +77,8 @@ for line in lines:
 print("Number of measurements: ", numOfMeas)
 print("Number of runs: ", numOfRuns)
 
-
-#store data into a csv file 
-#if you want to append data to existing file make below variable True
 #LTspice sometimes crashes. To append new data to previous data,
-#isAppend can be used
-
+#make below variable True
 
 isAppend = False
 
