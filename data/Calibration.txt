@@ -1,0 +1,39 @@
+Circuit: * C:\Users\Calibration.asc
+
+Direct Newton iteration for .op point succeeded.
+.step run=1
+.step run=2
+.step run=3
+.step run=4
+.step run=5
+.step run=6
+.step run=7
+.step run=8
+.step run=9
+.step run=10
+
+Measurement: percenterror
+  step	AVG((v(vin) - v(result)) / v(vin))	FROM	TO
+     1	-0.000717217	0	0.001
+     2	0.00170141	0	0.001
+     3	-0.000337519	0	0.001
+     4	0.000732368	0	0.001
+     5	-0.00142278	0	0.001
+     6	-0.000385012	0	0.001
+     7	0.000308657	0	0.001
+     8	-0.00145195	0	0.001
+     9	0.00178537	0	0.001
+    10	-5.10012e-005	0	0.001
+
+Measurement: mv_error
+  step	AVG(v(vin) - v(result))	FROM	TO
+     1	-0.00904465	0	0.001
+     2	0.0199728	0	0.001
+     3	-0.00395679	0	0.001
+     4	0.0092392	0	0.001
+     5	-0.0201826	0	0.001
+     6	-0.00534916	0	0.001
+     7	0.00391293	0	0.001
+     8	-0.0195971	0	0.001
+     9	0.0243444	0	0.001
+    10	-0.000626564	0	0.001
