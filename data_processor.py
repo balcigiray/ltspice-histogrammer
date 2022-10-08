@@ -55,7 +55,7 @@ for line in lines:
         isStartOfMeas = True
    
     if(isStartOfMeas):
-        if((counter > 1) and (counter <= numOfRuns)):
+        if((counter > 0) and (counter <= numOfRuns)):
             value = line.split()[1]
 
             measList.append(value)
