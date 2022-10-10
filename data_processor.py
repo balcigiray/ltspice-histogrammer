@@ -104,6 +104,11 @@ else:
 #%% read data and plot the histograms
 data = pd.read_csv(csv_file_name)
 
+print(data.mean())
+print(data.std())
+print("Max: ", data.max())
+print("Min: ", data.min())
+
 my_dpi = 200
 
 fig, axs = plt.subplots(figsize=(10,5))
